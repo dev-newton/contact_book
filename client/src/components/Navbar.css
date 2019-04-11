@@ -1,0 +1,95 @@
+.github {
+  color: #fff;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.github:hover {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #11a8c0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 6px 6px 16px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+}
+
+.sidenav a.brand {
+  padding: 0 6px;
+  font-size: 24px;
+}
+
+.sidenav a:hover {
+  color: lightgrey;
+}
+
+button.selected {
+  color: purple;
+}
+
+.main {
+  color: black;
+  margin-top: 50px;
+  height: 100%;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  background-color: #fff;
+  margin-left: 270px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 2px #f1f1f1;
+}
+
+@media only screen and (max-width: 767px) {
+  .github {
+    margin-right: 0;
+  }
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #11a8c0;
+  border-bottom: 16px solid #11a8c0;
+  width: 220px;
+  height: 220px;
+  margin-left: 350px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
